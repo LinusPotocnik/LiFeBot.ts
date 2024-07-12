@@ -1,0 +1,8 @@
+node_modules
+dist
+
+*.db
+dev.sh
+
+.env
+docker-compose.yaml

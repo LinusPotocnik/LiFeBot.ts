@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+
+    /* Module and Interoperability */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": false,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+
+    /* Output */
+    "outDir": "dist",
+
+    /* Type Checking */
+    "strict": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+
+    /* Uncomment the following lines if declaration files are needed */
+    // "declaration": true,
+    // "declarationMap": true
+  },
+  "exclude": ["node_modules", "dist", "scripts"]
+}
