@@ -1,1 +1,2 @@
+npm run clean-build
 DISCORD_TOKEN=123 GUILDID=456 MODE=DEV npm start
