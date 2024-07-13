@@ -1,0 +1,19 @@
+{
+  "clear": {
+    "confirmation": "{0} Nachricht(en) gelöscht!",
+    "error": {
+      "bot": "Der Bot hat nicht die Berechtigung, Nachrichten zu löschen!",
+      "user": "Du bist nicht berechtigt, Nachrichten zu löschen!"
+    }
+  },
+  "coinflip": {
+    "heads": "Kopf",
+    "tails": "Zahl",
+    "side": "Die Münze ist auf der Seite gelandet, probier's nochmal!"
+  },
+  "color": {
+    "error": {
+      "hex": "Bitte gib eine Farbe als #RRGGBB an!"
+    }
+  }
+}

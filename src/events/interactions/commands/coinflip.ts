@@ -3,6 +3,7 @@ import {
   RESTPostAPIChatInputApplicationCommandsJSONBody,
   SlashCommandBuilder,
 } from 'discord.js';
+import { localize } from '../../../utility/language';
 
 export function create(): RESTPostAPIChatInputApplicationCommandsJSONBody {
   const command = new SlashCommandBuilder()
@@ -14,13 +15,14 @@ export function create(): RESTPostAPIChatInputApplicationCommandsJSONBody {
 }
 
 export function execute(interaction: ChatInputCommandInteraction) {
+  const locale = interaction.locale;
   const randomNumber = Math.random();
   const randomString =
     randomNumber < 0.5
-      ? 'Heads'
+      ? localize(locale, 'coinflip.heads')
       : randomNumber > 0.5
-      ? 'Tails'
-      : 'The coin landed on its side, try again!';
+      ? localize(locale, 'coinflip.tails')
+      : localize(locale, 'coinflip.side');
 
   interaction.reply({ content: randomString });
 }

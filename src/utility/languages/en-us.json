@@ -1,0 +1,19 @@
+{
+  "clear": {
+    "confirmation": "Deleted {0} message(s)!",
+    "error": {
+      "bot": "The bot isn't allowed to delete messages!",
+      "user": "You are not allowed to delete messages!"
+    }
+  },
+  "coinflip": {
+    "heads": "Heads",
+    "tails": "Tails",
+    "side": "The coin landed on its side, try again!"
+  },
+  "color": {
+    "error": {
+      "hex": "Please provide a color in the form #RRGGBB"
+    }
+  }
+}

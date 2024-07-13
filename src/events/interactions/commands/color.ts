@@ -4,6 +4,7 @@ import {
   RESTPostAPIChatInputApplicationCommandsJSONBody,
   SlashCommandBuilder,
 } from 'discord.js';
+import { localize } from '../../../utility/language';
 
 export function create(): RESTPostAPIChatInputApplicationCommandsJSONBody {
   const command = new SlashCommandBuilder()
@@ -23,12 +24,13 @@ export function create(): RESTPostAPIChatInputApplicationCommandsJSONBody {
 }
 
 export function execute(interaction: ChatInputCommandInteraction) {
+  const locale = interaction.locale;
   const hexRegEx: RegExp = /\b#?[0-9A-Fa-f]{6}\b/s;
   let color = interaction.options.getString('hex')!;
 
   if (!hexRegEx.test(color)) {
     interaction.reply({
-      content: 'Illegal input! Please provide a color in the form #RRGGBB',
+      content: localize(locale, 'color.error.hex'),
       ephemeral: true,
     });
     return;
